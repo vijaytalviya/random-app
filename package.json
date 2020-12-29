@@ -7,7 +7,9 @@
     "server": "live-server public/",
     "build:dev": "webpack",
     "dev-server": "webpack-dev-server",
-    "bulid:prod": "webpack -p --env production"
+    "bulid:prod": "webpack -p --env production",
+    "start": "node server/server.js",
+    "heroku-postbuild":"npm run build:prod"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
